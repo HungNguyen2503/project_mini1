@@ -1,7 +1,8 @@
 .header{
     background-color: var(--color-bg-primary);
     position: sticky;
-    top: 0;z-index: 10;
+    top: 0;
+    z-index: 10;
 }
 .header .inner-wrap{
     display: flex;
@@ -75,6 +76,35 @@
 .header .img-logo img {
     transition: width 0.3s, height 0.3s;
 }
+.header .inner-wrap .bars{
+    display: none;
+}
+@media (max-width: 992px){
+    .header .inner-wrap .icon-social,
+    .header .inner-wrap .menu{
+        display: none;
+    }
+    .header .inner-wrap .bars{
+        display: flex;
+        box-sizing: border-box;
+        font-size: 2.2rem;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .header .inner-wrap {
+        padding: 0 2.5rem;
+    }
+}
+@media (max-width: 768px){
+    .header .inner-wrap {
+        padding: 0 1.8rem;
+    }
+}
+@media (max-width: 576px){
+    .header .inner-wrap {
+        padding: 0 1rem;
+    }
+}
 /*End header*/
 
 
@@ -83,7 +113,6 @@
 
 
 /*Section one*/
-
 .section-one{
     position: relative;
     display: flex;
@@ -130,7 +159,13 @@
 .section-one .inner-wrap a:nth-child(1){
     color: var(--color-text-primary);
 }
-
+@media (max-width: 768px){
+    .section-one .inner-wrap{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 /*End Section one*/
 
@@ -156,9 +191,12 @@
 }
 .section-two .inner-wrap .content-wrapper{
     margin:  1rem 0;
+    box-sizing: border-box;
 }
 .section-two .inner-wrap .content-wrapper .icon{
     display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .section-two .inner-wrap .content-wrapper h4{
     color: #777777;
@@ -180,6 +218,7 @@
     align-items: center;
     box-sizing: border-box;
     margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
     background-color: var(--color-bg-white);
 }
 .section-two .inner-wrap .content-wrapper .icon-wrapper span{
@@ -206,6 +245,19 @@
     color: var(--color-text-primary);
     margin-left: 0;
     border-color: var(--color-bg-primary);
+}
+@media (max-width: 992px){
+    .section-two .inner-wrap{
+        flex-direction: column-reverse;
+    }
+    .section-two .inner-wrap > div{
+        width: 100%;
+    }
+    .section-two .inner-wrap .img-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /*End Section two*/
 

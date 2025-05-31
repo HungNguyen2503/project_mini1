@@ -35,6 +35,9 @@ body{
   
 }
 @media (max-width: 768px){
+  html{
+    font-size: 14px;
+  }
   .container{
     max-width: 576px;
     width: 100%;
@@ -42,6 +45,9 @@ body{
   
 }
 @media (max-width: 576px){
+    html{
+    font-size: 12px;
+  }
   .container{
     width: 100%;
   }
