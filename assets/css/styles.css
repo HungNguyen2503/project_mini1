@@ -90,6 +90,7 @@
         font-size: 2.2rem;
         align-items: center;
         padding: 1rem 0;
+        cursor: pointer;
     }
     .header .inner-wrap {
         padding: 0 2.5rem;
@@ -104,6 +105,28 @@
     .header .inner-wrap {
         padding: 0 1rem;
     }
+}
+.header .inner-wrap .menuShow{
+    display: flex;
+    background-color: var(--color-bg-white);
+    z-index: 100;
+    position: absolute;
+    top: 1rem;
+    right: 4.5rem;
+    border-radius: 1rem;
+    box-shadow: 7px 6px 7px 4px #6f6f6f66;
+    overflow: hidden;
+}
+.header .inner-wrap .menuShow ul{
+    flex-direction: column;
+    height: 100%;
+}
+.header .inner-wrap .menuShow ul li{
+    padding: 1rem 5rem;
+    border-bottom: 1px solid #000;
+}
+.header .inner-wrap .menuShow ul li:hover{
+    background-color: var(--color-bg-primary);
 }
 /*End header*/
 
